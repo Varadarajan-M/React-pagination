@@ -14,6 +14,7 @@ const Pagination = ({
 			{totalButtonsArr.map((_, index) => {
 				return (
 					<Button
+						key={index}
 						onClick={() => switchPage(index + 1)}
 						text={index + 1}
 					/>
